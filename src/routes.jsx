@@ -8,6 +8,7 @@ import {
   import Home from '@/pages/Home';
   import AccountLinks from "@/pages/AccountLinks";
   import Dashboard from "@/pages/Admin/Dashboard";
+  import CreateLink from "@/pages/Admin/CreateLink";
 
   export default createBrowserRouter(
     createRoutesFromElements(
@@ -15,7 +16,8 @@ import {
             <Route path="/" element={ <Home /> }></Route>
             <Route path="/:accountlink" element={ <AccountLinks /> }></Route>
             <Route path="/admin">
-                <Route path="dashboard" element={ <Dashboard />}></Route>
+                <Route path="dashboard" element={ <Dashboard /> }></Route>
+                <Route path="create-link" element={ <CreateLink /> }></Route>
             </Route>
         </>
     )
