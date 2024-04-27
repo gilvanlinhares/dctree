@@ -1,16 +1,17 @@
-
 import {
     createBrowserRouter,
     createRoutesFromElements,
-    Route
-  } from "react-router-dom";
+    Route,
+    useParams
+} from "react-router-dom";
 
-  import Home from '@/pages/Home';
-  import AccountLinks from "@/pages/AccountLinks";
-  import Dashboard from "@/pages/Admin/Dashboard";
-  import CreateLink from "@/pages/Admin/CreateLink";
+import Home from '@/pages/Home';
+import AccountLinks from '@/pages/AccountLinks';
+import Dashboard from '@/pages/Admin/Dashboard';
+import AdminMenu from "@/components/Admin/AdminMenu";
+import CreateLink from "@/pages/Admin/CreateLink";
 
-  export default createBrowserRouter(
+export default createBrowserRouter(
     createRoutesFromElements(
         <>
             <Route path="/" element={ <Home /> }></Route>
@@ -21,4 +22,4 @@ import {
             </Route>
         </>
     )
-  )
+)

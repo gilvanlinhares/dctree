@@ -1,6 +1,7 @@
+
 import { Link } from "react-router-dom";
 
-export default function Dashboard(){
+export default function Home() {
     return (
         <ul>
             <li>

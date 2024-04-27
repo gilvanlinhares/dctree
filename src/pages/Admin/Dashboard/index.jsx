@@ -1,10 +1,10 @@
 
-import Admin from "..";
+import Admin from "@/pages/Admin";
 
 export default function Dashboard() {
-    return (
+    return ( 
         <Admin>
             <h1>Dashboard</h1>
         </Admin>
-    )
-}
+    );
+} 
